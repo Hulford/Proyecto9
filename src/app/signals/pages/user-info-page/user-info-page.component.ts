@@ -1,5 +1,5 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { UsersServiceService } from '../../services/user-service.service';
+import { UserServiceService } from '../../services/user-service.service';
 import { User } from '../../interfaces/user-reques.interface';
 
 @Component({
@@ -9,7 +9,7 @@ import { User } from '../../interfaces/user-reques.interface';
 export class UserInfoPageComponent implements OnInit {
 
 
-private usersService = inject(UsersServiceService);
+private usersService = inject(UserServiceService);
 public userId = signal(1);
 
 public currentUser = signal<User| undefined>(undefined);
