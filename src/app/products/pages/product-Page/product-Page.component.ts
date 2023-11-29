@@ -1,12 +1,11 @@
-import { Component, inject  } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  templateUrl: './product-Page.component.html',
-  styleUrls: ['./product-Page.component.css']
+  templateUrl: './product-page.component.html',
+  styleUrls: ['./product-page.component.css']
 })
 export class ProductPageComponent {
-
 
   // constructor( private fb: FormBuilder ) {}
   private fb = inject( FormBuilder );
@@ -21,6 +20,9 @@ export class ProductPageComponent {
   changeColor() {
     this.color = '#xxxxxx'.replace(/x/g, y=>(Math.random()*16|0).toString(16));
   }
+
+
+
 
 
 }

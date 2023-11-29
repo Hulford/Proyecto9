@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 
+
 interface MenuItem {
   title: string;
   route: string;
@@ -18,13 +19,10 @@ export class SideMenuComponent {
     { title: 'Mutaciones', route: 'properties' },
   ]);
 
-
-
-
   // public menuItems: MenuItem[] = [
-  //  { title: 'Contador', route: 'counter'},
-  //  { title: 'Usuario', route: 'user-info'},
-  //  { title: 'Mutaciones', route: 'properties'},
-
+  //   { title: 'Contador', route: 'counter' },
+  //   { title: 'Usuario', route: 'user-info' },
+  //   { title: 'Mutaciones', route: 'properties' },
   // ];
+
 }

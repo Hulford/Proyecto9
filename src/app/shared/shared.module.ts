@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CustomLabelDirective } from './directives/customLabel.directive';
+import { CustomLabelDirective } from './directives/custom-label.directive';
+
+
 
 @NgModule({
   declarations: [
-    CustomLabelDirective,
+    CustomLabelDirective
   ],
   imports: [
     CommonModule
   ],
-exports:[
-  CustomLabelDirective
-]
+  exports: [
+    CustomLabelDirective,
+  ]
 })
 export class SharedModule { }
