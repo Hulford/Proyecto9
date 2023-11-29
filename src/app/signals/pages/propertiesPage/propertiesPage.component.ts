@@ -11,5 +11,8 @@ export class PropertiesPageComponent implements OnInit {
 
   ngOnInit() {
   }
+  onFieldUpdate( field: string, value: string){
+    console.log(field, value)
+  }
 
 }
